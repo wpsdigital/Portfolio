@@ -6,8 +6,8 @@ import { useState } from 'react';
 const Contact = () => {
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
-  const [email, setEmail] = useState('');
-  const [message,setMessage] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
@@ -15,10 +15,10 @@ const Contact = () => {
     console.log('Sending')
 
     let data = {
-        name,
-        surname,
-        email,
-        message
+      name,
+      surname,
+      email,
+      message
     }
 
     fetch('/api/contact', {
@@ -29,14 +29,15 @@ const Contact = () => {
       },
       body: JSON.stringify(data)
     }).then((res) => {
-        console.log('Response received')
-        if (res.status === 200) {
-            console.log('Response succeeded!')
-            setSubmitted(true) 
-            setName('')
-            setEmail('')
-            setMessage('')
-        }
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setSubmitted(true)
+        setName('')
+        setSurname('')
+        setEmail('')
+        setMessage('')
+      }
     })
   }
 
@@ -47,7 +48,7 @@ const Contact = () => {
         {/** text & form */}
         <div className='flex flex-col w-full max-w-[700px]'>
           {/** text */}
-          <motion.h2 
+          <motion.h2
             variants={fadeIn('up', 0.2)}
             initial="hidden"
             animate="show"
@@ -62,13 +63,13 @@ const Contact = () => {
             exit="hidden" className='flex flex-1 flex-col gap-6 w-full mx-auto'>
             {/** group */}
             <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='Name' className='input' onChange={(e) => {setName(e.target.value)}} />
-              <input type='text' placeholder='Surname' className='input' onChange={(e) => {setSurname(e.target.value)}} />
+              <input type='text' placeholder='Name' className='input' onChange={(e) => { setName(e.target.value) }} />
+              <input type='text' placeholder='Surname' className='input' onChange={(e) => { setSurname(e.target.value) }} />
             </div>
-            <input type='text' placeholder='E-mail Address' className='input lowercase' onChange={(e) => {setEmail(e.target.value)}} />
-            <textarea placeholder='Message' className='textarea'  onChange={(e) => {setMessage(e.target.value)}}></textarea>
+            <input type='text' placeholder='E-mail Address' className='input lowercase' onChange={(e) => { setEmail(e.target.value) }} />
+            <textarea placeholder='Message' className='textarea' onChange={(e) => { setMessage(e.target.value) }}></textarea>
             <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
-              <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500' onClick={(e)=>{handleSubmit(e)}}>Let`s Talk</span>
+              <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500' onClick={(e) => { handleSubmit(e) }}>Let`s Talk</span>
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
             </button>
           </motion.form>
@@ -77,5 +78,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;
