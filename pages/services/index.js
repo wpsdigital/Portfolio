@@ -27,7 +27,7 @@ const Services = () => {
               animate='show'
               exit='exit'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Dolore enim deserunt fugiat deserunt labore exercitation minim aute labore. Et veniam commodo commodo cupidatat in nulla labore cillum excepteur laborum occaecat mollit.
+              I`m here to save your time and help you do better with the time you earn.I am ready to help you with everything from A to Z in your new projects.
             </motion.p>
           </div>
           <motion.div 

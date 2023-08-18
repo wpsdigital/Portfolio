@@ -1,9 +1,6 @@
-import Image from "next/image";
-
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
-
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -21,8 +18,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Time is the  <br /> {" "}
+            <span className="text-accent">greatest wealth.</span>
           </motion.h1>
 
           {/** Subtitle */}
@@ -33,9 +30,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
-            amet consectetur adipisicing elit.
+            Time is the greatest wealth. I develop software to make you rich. It is necessary to touch the lives of only those who know that the most valuable thing is time.
           </motion.p>
           {/** Button */}
           <div className="flex justify-center xl:hidden relative">

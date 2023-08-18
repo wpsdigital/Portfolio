@@ -27,7 +27,7 @@ const Work = () => {
               animate='show'
               exit='exit'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Dolore enim deserunt fugiat deserunt labore exercitation minim aute labore. Et veniam commodo commodo cupidatat in nulla labore cillum excepteur laborum occaecat mollit.
+              You can browse completed and ongoing projects. Also you can request a project from the contact page. 
             </motion.p>
           </div>
           <motion.div 

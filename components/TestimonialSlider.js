@@ -11,25 +11,25 @@ import Image from 'next/image';
 // testimonial data
 export const testimonialData = [
   {
-    image: '/t-avt-1.png',
+    image: '/avatar.png',
     name: 'Anne Smith',
-    position: 'Customer',
+    job: 'Web Development',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'We needed a website for e-commerce. We only had our logo. A very nice design came out with the logo colors. It was a fast website and we liked the design. We thank you.',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: '/avatar.png',
+    name: 'Smith Durian',
+    job: 'Mobile Development',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'I wanted to make a mobile application related to sports predictions. I bought the mobile application at the end of 1 month, but when I bought it, there was a management panel with it. When I asked, I heard the sentence that you can manage it through this panel because you need it in the future, and I liked it very much. I thank him for his hard work.',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    image: '/avatar.png',
+    name: 'Elizabeth Ktril',
+    job: 'Web Development',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Our corporate company website had to change. We contacted him and requested a professional and corporate website. It was a very fast and seamless cooperation. We thank you.',
   },
 ];
 const TestimonalSlider = () => {
@@ -52,6 +52,7 @@ const TestimonalSlider = () => {
                 </div>
                 <div className='text-lg'>{person.name}</div>
                 <div className='text-[12px] uppercase font-extrabold tracking-widest'>{person.position}</div>
+                <div className='text-[10px] tracking-widest'>{person.job}</div>
               </div>
             </div>
             <div 
