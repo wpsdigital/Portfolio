@@ -24,49 +24,50 @@ const aboutData = [
     ],
   },
   {
-    title: 'experience',
+    title: 'Formação acadêmica',
     info: [
       {
-        title: 'PHP  Developer',
-        company: 'Grafil',
-        stage: '2017 - 2017',
-        status: 'intern'
+        title: 'Análise e Desenvolvimento de Sistemas',
+        company: 'Centro Universitário Senac-SP',
+        stage: '2024 - 2026',
+        status: ''
       },
       {
-        title: 'Full Stack Developer',
-        company: '1010İstanbul & Sosyal Medya Kampüsü',
-        stage: '2019 - 2021',
-        status: 'full time'
+        title: 'Python Data Analytics - DIO',
+        company: 'DIO',
+        stage: 'Abril de 2024 - 68 horas.',
+        status: ''
 
       },
       {
-        title: 'Mid-Level PHP Developer',
-        company: 'Realtor Global',
-        stage: '2023 - (Current)',
-        status: 'full time'
+        title: 'Python Essentials 1 ',
+        company: 'Cisco Networking Academy',
+        stage: 'Abril de 2024',
+        status: ''
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'experiência',
     info: [
       {
-        title: 'Web Development',
-        company: 'High School, TR',
-        stage: '2015',
+        title: 'Analista de Mídia e Monitoramento de Clipping',
+        company: 'Info Clipping',
+        stage: '2010 - 2022',
       },
       {
-        title: 'Computer Programming',
-        company: 'Associate Degree - TR',
-        stage: '2017',
+        title: '',
+        company: '',
+        stage: '',
       },
       {
-        title: 'Computer Engineering',
-        company: 'Bachelor`s Degree - TR',
-        stage: '2023',
+        title: '',
+        company: '',
+        stage: '',
       },
     ],
   },
+  
 ];
 
 const About = () => {
@@ -89,7 +90,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             className='h2'>
-            Captivation <span className='text-accent'>stories</span> birth magnificent designs.
+            Códigos precisos tecem <span className='text-accent'>sistemas</span> poderosos.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -97,7 +98,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            12 years ago, I began freelancing as a developer. Since then, I have done remote work for agencies, consulted for startups and colloborated on digital products for bussiness and consumer use.
+            Em constante evolução, alimento minha paixão pela tecnologia, explorando as linguagens da web e os segredos dos bancos de dados, ansioso para deixar minha marca no mundo da TI.
           </motion.p>
           <motion.div
           variants={fadeIn('right', 0.6)}
